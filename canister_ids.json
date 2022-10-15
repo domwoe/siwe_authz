@@ -1,0 +1,11 @@
+{
+  "application_backend": {
+    "ic": "xuhmi-2iaaa-aaaak-qawoa-cai"
+  },
+  "identity_proxy": {
+    "ic": "xtgk4-xqaaa-aaaak-qawoq-cai"
+  },
+  "application_frontend": {
+    "ic": "x2fba-byaaa-aaaak-qawpa-cai"
+  }
+}

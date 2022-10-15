@@ -1,0 +1,24 @@
+type ProxyResultCall = variant {
+    Ok : record { return: blob };
+    Err : text;
+};
+
+service : {
+    // Call Forwarding
+    proxy_call: (record {
+        canister: principal;
+        method_name: text;
+        args: blob;
+        cycles: nat64;
+        siwe_msg: text;
+        siwe_sig: text;
+    }) -> (ProxyResultCall);
+    proxy_call128: (record {
+        canister: principal;
+        method_name: text;
+        args: blob;
+        cycles: nat;
+        siwe_msg: text;
+        siwe_sig: text;
+    }) -> (ProxyResultCall);
+}

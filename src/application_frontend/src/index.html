@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Sign-in with Ethereum PoC Application</title>
+    <base href="/" />
+    <link rel="icon" href="favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div><button id="connectWalletBtn">Connect wallet</button></div>
+
+    <fieldset>
+      <legend>Set capabilites:</legend>
+
+      <div>
+        <input type="checkbox" id="get" name="get" checked />
+        <label for="get">Get</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="inc" name="inc" />
+        <label for="inc">Inc</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="set" name="set" />
+        <label for="set">Set</label>
+      </div>
+    </fieldset>
+
+    <div><button id="siweBtn">Authorize</button></div>
+
+    <div><button id="getCounter">Get</button></div>
+    <div><button id="incCounter">Inc</button></div>
+    <div><button id="setCounter">Set</button></div>
+  </body>
+</html>
